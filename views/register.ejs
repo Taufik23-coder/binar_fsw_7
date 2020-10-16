@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('head.ejs') %>
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid jumbotronBg">
+      <div class="container"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 mx-auto mt-5">
+          <h3 class="text-center">Register</h3>
+          <form method="POST" action="/register">
+            <div class="form-group">
+              <label for="exampleInputUsername1">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputUsername1"
+                aria-describedby="emailHelp"
+                name="username"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                name="password"
+              />
+            </div>
+            <button type="submit" class="btn btn-outline-info">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
